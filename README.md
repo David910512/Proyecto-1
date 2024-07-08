@@ -1,5 +1,5 @@
 #[Proyecto 1](https://david910512.github.io/Proyecto-1/)
-[![Proyecto 1](https://i.postimg.cc/y6rf1N7n/imagen-2024-07-07-223242393.png)] 
+[![Proyecto 1](https://i.postimg.cc/02ybf8mg/p.png)] 
 (https://david910512.github.io/Proyecto-1/)
 
 ## 📄 Proyecto1 📄
