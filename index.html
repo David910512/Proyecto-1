@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El mundo de los juegos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/130/096/small_2x/dragon-esport-mascot-logo-design-vector.jpg" alt="Logo">
+            <h1>El mundo Gamer</h1>
+        </div>
+        <nav>
+            <a href="formulario 1/index.html">Cuenta</a>
+            <a href="#">Productos</a>
+            <a href="Emerson/index.html">Nosotros</a>
+            <a href="Yair/index.html">Contacto</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+            <button type="button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="cart-container">
+            <button id="cart-button"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+        </div>
+    </header>
+    <main>
+        <h2>Los mejores juegos más destacados</h2>
+        <div class="imagenes">
+            <div class="juego">
+                <a target="_blank" href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"><img src="https://ir.ozone.ru/s3/multimedia-4/c1000/6783361984.jpg" alt="Helldivers" class="imagen"></a>
+                <h1>Helldivers</h1>
+                <p>La última línea de ataque de la galaxia. Alístate en los Helldivers y únete a la lucha por la libertad en una galaxia hostil en un juego de disparos en tercera persona rápido, frenético y feroz.</p><br>
+                <iframe class="video" src="https://www.youtube.com/embed/3DJCLVCirQE?si=8T2QzBzawbe18Gf1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="juego">
+                <a target="_blank" href="https://store.steampowered.com/app/1260320/Party_Animals/"><img src="https://upload.wikimedia.org/wikipedia/en/7/75/Party_Animals_cover.jpg" alt="Party Animals" class="imagen"></a>
+                <h1>Party Animals</h1>
+                <p>¡Pelea contra tus amigos como perritos, gatitos y otras criaturas peludas en PARTY ANIMALS! Patea a tus amigos tanto online como offline. Interactúa con el mundo bajo nuestro motor de físicas realistas. ¿Ya mencioné PERRITOS?</p>
+                <iframe class="video" src="https://www.youtube.com/embed/6rbnxyfYtxg?si=Pj4ssdfLOQkpeAwe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="juego">
+                <a target="_blank" href="https://store.steampowered.com/app/570/Dota_2/"><img src="https://i.pinimg.com/236x/d1/59/e9/d159e9ca272b73f56ef2b770a7c0b17b.jpg" alt="Dota 2" class="imagen"></a>
+                <h1>Dota 2</h1>
+                <p>Cada día, millones de jugadores de todo el mundo entran en batalla como uno de los más de cien héroes de Dota. Y no importa si es su décima hora de juego o la milésima, siempre hay algo nuevo que descubrir.</p>
+                <iframe class="video" src="https://www.youtube.com/embed/n2xN0y8Z1Mo?si=70wi6WJCXMbOwNA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <hr>
+        <h2>También vendemos estos productos</h2>
+        <div class="carrusel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="productos">
+                <div class="producto">
+                    <img src="https://down-br.img.susercontent.com/file/068bc473faafddb4eedcc01cc212d386" alt="Redragon Storm Pro">
+                    <h3>$200</h3>
+                    <h3>Redragon Storm Pro</h3>
+                    <p>Mouse, Redragon</p>
+                    <button onclick="addToCart('Redragon Storm Pro', 200)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://falabella.scene7.com/is/image/FalabellaPE/114059384_1?wid=800&hei=800&qlt=70" alt="Teclado Redragon yama RGB550">
+                    <h3>$200</h3>
+                    <h3>Teclado Redragon Yama RGB550</h3>
+                    <p>Teclado, Redragon</p>
+                    <button onclick="addToCart('Teclado Redragon Yama RGB550', 200)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://falabella.scene7.com/is/image/FalabellaPE/gsc_116868399_1595058_7?wid=800&hei=800&qlt=70" alt="Redragon Zeus H510-RGB">
+                    <h3>$200</h3>
+                    <h3>Redragon Zeus H510-RGB</h3>
+                    <p>Audífono, Redragon</p>
+                    <button onclick="addToCart('Redragon Zeus H510-RGB', 200)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://promart.vteximg.com.br/arquivos/ids/7222212-1000-1000/image-0.jpg?v=638234771821270000" alt="Redragon Storm Pro">
+                    <h3>$200</h3>
+                    <h3>Monitor Samsumg de 24" </h3>
+                    <p>Monitor, Gaming</p>
+                    <button onclick="addToCart('Monitor Samsung de 24', 200)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://rymportatiles.com.pe/cdn/shop/files/Headset-G733-6339.jpg?v=1696020124" alt="Redragon Storm Pro">
+                    <h3>$200</h3>
+                    <h3>Redragon Storm Pro</h3>
+                    <p>Mouse, Redragon</p>
+                    <button onclick="addToCart('Redragon Storm Pro', 200)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://oechsle.vteximg.com.br/arquivos/ids/3064108-1000-1000/image-04677b2c946a4ddeabd91039eec25188.jpg?v=637492424484700000" alt="Mousepad">
+                    <h3>$200</h3>
+                    <h3>Mousepad Hiperex</h3>
+                    <p>Mouse, Mousepad, Gaming</p>
+                    <button onclick="addToCart('Mousepad Hiperex', 200)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://mauricomputacion.com.ar/images/productos/500x500/24708.webp" alt="Procesador">
+                    <h3>$700</h3>
+                    <h3>Procesador Ryzen 7 7700x 5.4ghz</h3>
+                    <p>Procesador, Gaming, Setup</p>
+                    <button onclick="addToCart('Procesador Ryzen 7 7700x 5.4ghz', 700)">Agregar al carrito</button>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button onclick="checkout()">Finalizar compra</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Compañia</h4>
+                    <ul>
+                        <li><a href="">Nosostros</a></li>
+                        <li><a href="">Nuestros servicios</a></li>
+                        <li><a href="">Pliticas y privacidad</a></li>
+                        <li><a href="">Afiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="">Preguntas</a></li>
+                        <li><a href="">Compras</a></li>
+                        <li><a href="">Envios</a></li>
+                        <li><a href="">Estatus de orden</a></li>
+                        <li><a href="">Pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="">Zona Gamer</a></li>
+                        <li><a href="">Perifericos</a></li>
+                        <li><a href="">Componentes de PC</a></li>
+                        <li><a href="">Juegos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Siquenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

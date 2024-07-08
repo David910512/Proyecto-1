@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validar.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hola, ingrese a su cuenta de "El Mundo Gamer"</h1>
+    </header>
+    <main>
+        <h3>Ingrese su registro:</h3>
+        <form action="validarfor.php" onsubmit="return validarfor()">
+            <p>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" autocomplete="off">
+            </p>
+            <p>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" id="Apellido">
+            </p>
+            <p>
+                <label for="DNI">Identificación:</label>
+                <input type="text" name="DNI" id="DNI" maxlength="8" autocomplete="off">
+            </p>
+            <p>
+                <label for="CorreoElectronico">Ingrese su Correo electrónico:</label>
+                <input type="email" name="CorreoElectronico" id="CorreoElectronico" placeholder="Correo@gmail.com" autocomplete="off" required>  
+            </p>
+            <p>
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" id="Contraseña" name="Contraseña" maxlength="4" required>
+            </p>
+            <p>
+                <input type="checkbox" name="Recordar" id="Recordar">
+                <label for="Recordar">Recordar contraseña</label>
+                <a class="a1" href="#" id="olvido">¿Olvidaste tu contraseña?</a>
+            </p>
+            <p>
+                <button type="submit">Ingresar</button>
+            </p>
+            <p>¿No tienes cuenta? <a href="#">¡Crea uno que esperas!</a></p>
+        </form>
+    </main>
+</body>
+</html>
